@@ -42,6 +42,7 @@ const TabItems = ({ url, children }) => {
     <NavLink
       activeStyle={{ textDecoration: 'underline' }}
       to={url}
+      exact
       className={className}
     >
       {children}
@@ -75,7 +76,7 @@ function debounce(func, wait) {
 }
 
 const tabContent = [
-  { text: 'Home', url: '/home' },
+  { text: 'Home', url: '/' },
   { text: 'Staking', url: '/staking' },
   { text: 'About Us', url: '/about' },
   { text: 'Contact Us', url: '/contact' },

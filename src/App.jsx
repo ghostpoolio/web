@@ -26,7 +26,7 @@ class App extends Component {
     return (
       <MainWithHeader>
         <Switch>
-          <Route exact path="/home" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/staking" component={Staking} />
         </Switch>
       </MainWithHeader>
